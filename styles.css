@@ -1,9 +1,32 @@
-.firstclass{
-    background-color: bisque;
+.body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
 }
-.firstclass h1{
-    color:brown
+header{
+    background-color: #4cafef;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: 1rem;
 }
-.listings a{
-    color: red;
+.dashboard{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+.widget{
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.widget h2{
+    margin-top: 0;
+}
+footer{
+    text-align: center;
+    padding:1rem;
+    background-color: #ddd;
+    margin-top: 1rem;
 }
