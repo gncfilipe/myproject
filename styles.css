@@ -95,7 +95,7 @@ input:focus-visible {
     grid-template-columns: minmax(180px, 2fr) minmax(100px, 0.8fr) minmax(140px, 1fr) auto;
     align-items: center;
 }
-#bill-form input[name="amount"] {
+#bills-form input[name="amount"] {
   text-align: right;
   font-size: 0.9rem;
 }
@@ -123,7 +123,7 @@ input:focus-visible {
     flex-direction: column;
     border: 1px solid var(--border);
     border-radius: 12px;
-    box-shadow: 0, 6px, 18px, rgba(15,23,42,0.06);
+    box-shadow: 0 6px 18px rgba(15,23,42,0.06);
     padding: 14px;
 }
 .widget form {
@@ -131,15 +131,15 @@ input:focus-visible {
     gap: 8px;
     align-items: center;
 }
-.widget:not(#meetings) form {
-    margin-top: auto;
+.widget > :not(calendar-section):last-of-type {
+    margin-bottom: auto;
 }
 .widget form > .btn {
     justify-self: end;
     align-self: center;
 }
 #finances, #bills, #emails, #fitness { min-height: 240px; }
-#meetings{ min-height: 360px; }
+#calendar-section{ min-height: 360px; }
 #todo{ min-height: 200px; }
 #dgoals{ min-height: 320px; }
 
@@ -169,7 +169,7 @@ input:focus-visible {
 }
 .list li:last-child { border-bottom: none; }
 .item-title{ font-weight: 600; }
-.item-meta{ color: var(--muted); font: size 1rem; }
+.item-meta{ color: var(--muted); font-size: 1rem; }
 
 #finance-chart{
     background: var(--panel-alt);
