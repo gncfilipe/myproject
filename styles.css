@@ -1,10 +1,9 @@
 .firstclass{
     background-color: bisque;
 }
-.h1{
-color:brown
+.firstclass h1{
+    color:brown
 }
-
-.listings{
-    color:aqua
+.listings a{
+    color: red;
 }
