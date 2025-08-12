@@ -17,18 +17,6 @@
     </div>
   </header>
   <main class="dashboard">
-    <!-- Calendar & Events -->
-    <section class="widget" id="calendar-section">
-      <h2 class="card-title"> 📅 Calendar & Meetings</h2>
-      <p class="muted" id="meetings-summary">No Upcoming Meetings</p>
-      <ul class="list" id="meeting-list"></ul>
-      <form id="meeting-form" class="row">
-        <input type="date" name="date" required/>
-        <input type="time" name="time" required/>
-        <input type="text" name="title" placeholder="Meeting Subject" required/>
-        <button class="btn" type="submit">Add</button>
-      </form>
-    </section>
     <!-- Income and Expenses -->
     <section class="widget" id="finances">
       <h2 class="card-title">💰 Income & Expenses</h2>
@@ -48,7 +36,7 @@
     <!-- Unread Emails -->
     <section class="widget" id="emails">
       <h2 class="card-title">📧 Unread Emails</h2>
-      <p class="muted" id="emails-summary">No Bills Are Due</p>
+      <p class="muted" id="emails-summary">No Unread Emails</p>
       <ul class="list" id="emails-list"></ul>
       <form id="emails-form" class="row">
         <input type="email" name="from" placeholder="From" required/>
@@ -56,35 +44,49 @@
         <button class="btn" type="submit">Add</button>
       </form>
     </section>
-    <!-- To-Do List -->
-    <section class="widget" id="todo">
-      <h2 class="card-title">📋 To-Do List</h2>
-      <p class="muted" id="todo-summary">No Tasks For Today</p>
-      <ul class="list" id="todo-list"></ul>
-      <form id="todo-form" class="row">
-        <input type="text" name="task" placeholder="New Task" required/>
-        <button class="btn" type="submit">Add</button>
-      </form>
-    </section>
-    <!-- Fitness -->
-    <section class="widget" id="fitness">
-      <h2 class="card-title">🏋 Fitness</h2>
-      <div id="fitness-progress" class="progress">0%</div>
-      <form id="fitness-form" class="row">
-        <input type="number" name="steps" placeholder="Steps Today" required/>
-        <input type="number" name="goal" min="10000" step="10000" placeholder="Daily Goal" required/>
-        <button class="btn" type="submit">Save</button>
-      </form>
-    </section>
-    <!-- Daily Goals -->
-    <section class="widget" id="dgoals">
-      <h2 class="card-title">☀ Daily Goals</h2>
-      <<ul class="list" id="dgoals-list"></ul>>
-      <form id="dgoals-form" class="row">
-        <input type="text" name="goal" placeholder="Add Goal" required/>
-        <button class="btn" type="submit">Add</button>
-      </form>
-    </section>
+    <div class="dashboard-row">
+      <!-- Calendar & Events -->
+      <section class="widget" id="calendar-section">
+        <h2 class="card-title"> 📅 Calendar & Meetings</h2>
+        <p class="muted" id="meetings-summary">No Upcoming Meetings</p>
+        <ul class="list" id="meeting-list"></ul>
+        <form id="meeting-form" class="row">
+          <input type="date" name="date" required/>
+          <input type="time" name="time" required/>
+          <input type="text" name="title" placeholder="Meeting Subject" required/>
+          <button class="btn" type="submit">Add</button>
+        </form>
+      </section>
+      <!-- To-Do List -->
+      <section class="widget" id="todo">
+        <h2 class="card-title">📋 To-Do List</h2>
+        <p class="muted" id="todo-summary">No Tasks For Today</p>
+        <ul class="list" id="todo-list"></ul>
+        <form id="todo-form" class="row">
+          <input type="text" name="task" placeholder="New Task" required/>
+          <button class="btn" type="submit">Add</button>
+        </form>
+      </section>
+      <!-- Fitness -->
+      <section class="widget" id="fitness">
+        <h2 class="card-title">🏋 Fitness</h2>
+        <div id="fitness-progress" class="progress">0%</div>
+        <form id="fitness-form" class="row">
+          <input type="number" name="steps" placeholder="Steps Today" required/>
+          <input type="number" name="goal" min="10000" step="10000" placeholder="Daily Goal" required/>
+          <button class="btn" type="submit">Save</button>
+        </form>
+      </section>
+      <!-- Daily Goals -->
+      <section class="widget" id="dgoals">
+        <h2 class="card-title">☀ Daily Goals</h2>
+        <ul class="list" id="dgoals-list"></ul>
+        <form id="dgoals-form" class="row">
+          <input type="text" name="goal" placeholder="Add Goal" required/>
+          <button class="btn" type="submit">Add</button>
+        </form>
+      </section>
+    </div>
   </main>
   <footer>Made by Gonçalo © 2025</footer>
   <script src="script.js"></script>
