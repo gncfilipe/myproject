@@ -160,16 +160,17 @@ input:focus-visible {
     border-radius: 8px;
 }
 .progress{
+    background: var(--panel-alt);
     display: flex;
     align-items: center;
     justify-content: center;
     height: 120px;
-    background: color-mix(in srgb, var(--panel) 85%, #000);
-    border: 1px dashed #ffffff20;
-    border-radius: 10px;
+    border: 1px dashed var(--border);
+    border-radius: 8px;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
+
 .footer{
     max-width: 1100px;
     margin: 0 auto 40px;
