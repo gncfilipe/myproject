@@ -19,7 +19,7 @@
   <main class="dashboard">
     <!-- Calendar & Events -->
     <section class="widget" id="calendar-section">
-      <h2 class="cal-title"> 📅 Calendar & Meetings</h2>
+      <h2 class="card-title"> 📅 Calendar & Meetings</h2>
       <p class="muted" id="meetings-summary">No Upcoming Meetings</p>
       <ul class="list" id="meeting-list"></ul>
       <form id="meeting-form" class="row">
@@ -31,12 +31,12 @@
     </section>
     <!-- Income and Expenses -->
     <section class="widget" id="finances">
-      <h2>💰 Income & Expenses</h2>
+      <h2 class="card-title">💰 Income & Expenses</h2>
       <canvas id="finance-chart"></canvas>
     </section>
     <!-- Due Bills -->
     <section class="widget" id="bills">
-      <h2>📑 Due Bills</h2>
+      <h2 class="card-title">📑 Due Bills</h2>
       <p class="muted" id="bills-summary">No Bills Are Due</p>
       <ul class="list" id="bills-list"></ul>
       <form id="bills-form" class="row">
@@ -47,7 +47,7 @@
     </section>
     <!-- Unread Emails -->
     <section class="widget" id="emails">
-      <h2>📧 Unread Emails</h2>
+      <h2 class="card-title">📧 Unread Emails</h2>
       <p class="muted" id="emails-summary">No Bills Are Due</p>
       <ul class="list" id="emails-list"></ul>
       <form id="emails-form" class="row">
@@ -58,7 +58,7 @@
     </section>
     <!-- To-Do List -->
     <section class="widget" id="todo">
-      <h2>📋 To-Do List</h2>
+      <h2 class="card-title">📋 To-Do List</h2>
       <p class="muted" id="todo-summary">No Tasks For Today</p>
       <ul class="list" id="todo-list"></ul>
       <form id="todo-form" class="row">
@@ -68,7 +68,7 @@
     </section>
     <!-- Fitness -->
     <section class="widget" id="fitness">
-      <h2>🏋 Fitness</h2>
+      <h2 class="card-title">🏋 Fitness</h2>
       <div id="fitness-progress" class="progress">0%</div>
       <form id="fitness-form" class="row">
         <input type="number" name="steps" placeholder="Steps Today" required/>
@@ -77,10 +77,10 @@
       </form>
     </section>
     <!-- Daily Goals -->
-    <section class="widget" id="dgoal">
-      <h2>☀ Daily Goals</h2>
-      <ul class="list" id="dgoal-list"></ul>
-      <form id="dgoal-form" class="row">
+    <section class="widget" id="dgoals">
+      <h2 class="card-title">☀ Daily Goals</h2>
+      <ul class="list" id="dgoals-list"></ul>
+      <form id="dgoals-form" class="row">
         <input type="text" name="goal" placeholder="Add Goal" required/>
         <button class="btn" type="submit">Add</button>
       </form>
